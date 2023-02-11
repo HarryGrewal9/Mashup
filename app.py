@@ -39,8 +39,8 @@ number_of_videos = st.number_input("Number of videos:", step=1, format='%d')
 duration_of_each_video = st.number_input("Duration of videos:", step=1, format='%d')
 email = st.text_input("Email: ")
 resultfile = 'result.mp3'
-if st.button("Generate Mashup"):
-    st.write("Result is expected to be sent within 30 min on your email.Sorry for the delay and Thankyou for using our service")
+if st.button("Generate"):
+    st.write("Please wait for results to be sent on your email")
     st.write("Please refresh on error.")
 
     # Perform the mashup generation
