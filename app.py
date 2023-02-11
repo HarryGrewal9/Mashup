@@ -31,7 +31,7 @@ def send_email(email, file):
 
 st.set_page_config(page_title="Mashup", layout="centered")
 
-st.markdown("<h1 style='text-align: center; color: Red;'>Mashup </h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;font-size:24px; color: Red;'>Mashup </h1>", unsafe_allow_html=True)
 
 singername = st.text_input("Singer name:")
 sn = singername.replace(' ','') + "songs"
@@ -41,7 +41,7 @@ email = st.text_input("Email: ")
 resultfile = 'result.mp3'
 if st.button("Generate"):
     st.write("Please wait for results to be sent on your email")
-    st.write("Please refresh on error.")
+    st.markdown("<h1 style='text-align: center;font-size:14px; color: Red;'>Refresh on error</h1>", unsafe_allow_html=True)
 
     # Perform the mashup generation
     urls = urllib.request.urlopen('https://www.youtube.com/results?search_query=' + str(sn))
