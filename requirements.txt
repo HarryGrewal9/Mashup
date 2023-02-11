@@ -1,0 +1,6 @@
+streamlit==1.18.1
+pytube==12.1.2
+pydub[ffmpeg]
+ffmpeg
+ffprobe
+ffmpeg-python
